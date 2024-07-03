@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "php-crud";
+$dbname = "api";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 

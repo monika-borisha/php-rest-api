@@ -5,7 +5,7 @@ header('Access-Control-Allow-Origin: *');
 
 include 'config.php';
 
-$sql = "SELECT * from user";
+$sql = "SELECT * from user-api";
 
 $result = mysqli_query($conn, $sql) or die("Query Unsuccessful.");
 
