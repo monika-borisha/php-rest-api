@@ -7,11 +7,11 @@ header('Access-Control-Allow-Headers: Access-Control-Allow-Headers,Content-Type,
 
 $data = json_decode(file_get_contents('php://input'), true);
 
-$new_id = $data['sid'];
+$new_id = $data['id'];
 
 include 'config.php';
 
-$sql = "SELECT * from user-api WHERE id = {$new_id}";
+$sql = "SELECT * from user_api WHERE id = {$new_id}";
 
 $result = mysqli_query($conn, $sql) or die("Query Unsuccessful.");
 
@@ -26,4 +26,3 @@ else{
  echo json_encode(array('message' => 'No Record Found.', 'status' => false));
 }
  
-?>

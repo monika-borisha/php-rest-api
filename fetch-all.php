@@ -5,7 +5,7 @@ header('Access-Control-Allow-Origin: *');
 
 include 'config.php';
 
-$sql = "SELECT * from user-api";
+$sql = "SELECT * from user_api";
 
 $result = mysqli_query($conn, $sql) or die("Query Unsuccessful.");
 
@@ -20,4 +20,3 @@ else{
  echo json_encode(array('message' => 'No Record Found.', 'status' => false));
 }
  
-?>
